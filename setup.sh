@@ -1,8 +1,12 @@
-apt-get install git
-apt-get install curl
-apt-get install fonts-firacode
-apt-get install neovim
-apt-get install tmux
-apt-get install gnome-shell-extensions
-apt-get install gnome-shell-extension-weather
+apt-get -y install git \
+    curl \
+    build-essential \
+    libncurses-dev \
+    konsole \
+    fonts-firacode \
+    neovim \
+    tmux \
+    gnome-shell-extensions \
+    gnome-shell-extension-weather
 
+update-alternatives --config x-terminal-emulator
