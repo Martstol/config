@@ -1,0 +1,27 @@
+[submodule "nvim/bundle/neomake"]
+	path = nvim/bundle/neomake
+	url = https://github.com/neomake/neomake
+[submodule "nvim/bundle/ctrlp.vim"]
+	path = nvim/bundle/ctrlp.vim
+	url = https://github.com/kien/ctrlp.vim
+[submodule "nvim/bundle/nerdtree"]
+	path = nvim/bundle/nerdtree
+	url = https://github.com/scrooloose/nerdtree
+[submodule "nvim/bundle/nerdtree-git-plugin"]
+	path = nvim/bundle/nerdtree-git-plugin
+	url = https://github.com/Xuyuanp/nerdtree-git-plugin
+[submodule "nvim/bundle/vim-airline"]
+	path = nvim/bundle/vim-airline
+	url = https://github.com/vim-airline/vim-airline
+[submodule "nvim/bundle/vim-airline-themes"]
+	path = nvim/bundle/vim-airline-themes
+	url = https://github.com/vim-airline/vim-airline-themes
+[submodule "nvim/bundle/vim-gitgutter"]
+	path = nvim/bundle/vim-gitgutter
+	url = https://github.com/airblade/vim-gitgutter
+[submodule "nvim/bundle/onedark.vim"]
+	path = nvim/bundle/onedark.vim
+	url = https://github.com/joshdick/onedark.vim
+[submodule "nvim/bundle/intero-neovim"]
+	path = nvim/bundle/intero-neovim
+	url = https://github.com/parsonsmatt/intero-neovim
