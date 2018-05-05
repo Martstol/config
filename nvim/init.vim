@@ -4,6 +4,9 @@ execute pathogen#infect()
 let mapleader = " "
 let g:mapleader = " "
 
+" Disable line wrap
+set nowrap
+
 " Set how many lines of history VIM has to remember
 set history=500
 
