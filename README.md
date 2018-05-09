@@ -8,5 +8,3 @@ Requires [pathogen](https://github.com/tpope/vim-pathogen)
 
 ## Zsh
 
-Requires [oh-my-zsh](https://ohmyz.sh)
-
