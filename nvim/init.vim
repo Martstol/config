@@ -1,5 +1,9 @@
 execute pathogen#infect()
 
+""""""""""""""
+" VIM CONFIG "
+""""""""""""""
+
 " Set leader
 let mapleader = " "
 let g:mapleader = " "
@@ -10,15 +14,15 @@ set nowrap
 " Set how many lines of history VIM has to remember
 set history=500
 
+" Set blinking cursor
+set guicursor+=a:blinkon1
+
 " Enable filetype plugins
 filetype plugin on
 filetype indent on
 
 " Set to auto read when a file is changed from the outside
 set autoread
-
-" Fast saving
-nmap <leader>w :w!<cr>
 
 " Ignore compiled files
 set wildignore=*.o,*~,*.pyc
@@ -34,6 +38,9 @@ set ruler
 " add a tiny margin to the left
 set foldcolumn=1
 
+" Command bar height
+set cmdheight=1
+
 " Avoid garbled characters in Chinese language windows OS
 let $LANG='en' 
 set langmenu=en
@@ -47,7 +54,8 @@ set so=7
 set wildmenu
 
 " Color scheme
-syntax on
+set t_Co=256
+syntax enable
 colorscheme onedark
 set background=dark
 
@@ -104,7 +112,7 @@ set noswapfile
 " Use spaces instead of tabs
 set expandtab
 
-" Be smart when using tabs ;)
+" Be smart when using tabs
 set smarttab
 
 " 1 tab == 4 spaces
@@ -128,6 +136,16 @@ map <C-j> <C-W>j
 map <C-k> <C-W>k
 map <C-h> <C-W>h
 map <C-l> <C-W>l
+
+try
+	set undodir=/tmp
+	set undofile
+catch
+endtry
+
+"""""""""""""""""
+" PLUGIN CONFIG "
+"""""""""""""""""
 
 " Nerdtree
 map <silent> <C-n> :NERDTreeToggle<CR>

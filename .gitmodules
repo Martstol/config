@@ -31,3 +31,6 @@
 [submodule "nvim/bundle/vim-hsimport"]
 	path = nvim/bundle/vim-hsimport
 	url = https://github.com/dan-t/vim-hsimport
+[submodule "nvim/bundle/awesome-vim-colorschemes"]
+	path = nvim/bundle/awesome-vim-colorschemes
+	url = https://github.com/rafi/awesome-vim-colorschemes
