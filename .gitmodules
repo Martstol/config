@@ -19,9 +19,15 @@
 [submodule "nvim/bundle/vim-gitgutter"]
 	path = nvim/bundle/vim-gitgutter
 	url = https://github.com/airblade/vim-gitgutter
-[submodule "nvim/bundle/onedark.vim"]
-	path = nvim/bundle/onedark.vim
-	url = https://github.com/joshdick/onedark.vim
 [submodule "nvim/bundle/intero-neovim"]
 	path = nvim/bundle/intero-neovim
 	url = https://github.com/parsonsmatt/intero-neovim
+[submodule "nvim/bundle/vim-stylishask"]
+	path = nvim/bundle/vim-stylishask
+	url = https://github.com/alx741/vim-stylishask.git
+[submodule "nvim/bundle/haskell-vim"]
+	path = nvim/bundle/haskell-vim
+	url = https://github.com/neovimhaskell/haskell-vim.git
+[submodule "nvim/bundle/vim-hsimport"]
+	path = nvim/bundle/vim-hsimport
+	url = https://github.com/dan-t/vim-hsimport

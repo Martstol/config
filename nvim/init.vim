@@ -140,20 +140,52 @@ au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g
 
 " Gitgutter
 let g:gitgutter_map_keys = 0
+let g:gitgutter_enabled = 1
 set updatetime=100
 
 " Airline
+let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
 
 " Intero
 augroup interoMaps
 	au!
 
-	" Automatically reload Intero on save
 	au BufWritePost *.hs InteroReload
 
-	au FileType haskell map <silent> <leader>t <Plug>InteroGenericType
-	au FileType haskell map <silent> <leader>T <Plug>InteroType
+	au FileType haskell nnoremap <silent> <leader>b :InteroGoToDef<cr>
+
+    au FileType haskell map <silent> <leader>t <Plug>InteroGenericType
+    au FileType haskell nnoremap <silent> <leader>T :InteroTypeInsert<cr>
+
 augroup END
 
 let g:intero_type_on_hover = 1
+set updatetime=500
+
+" Haskell-vim
+let g:haskell_classic_highlighting = 1
+let g:haskell_indent_if = 3
+let g:haskell_indent_case = 2
+let g:haskell_indent_let = 4
+let g:haskell_indent_where = 6
+let g:haskell_indent_before_where = 2
+let g:haskell_indent_after_bare_where = 2
+let g:haskell_indent_do = 3
+let g:haskell_indent_in = 1
+let g:haskell_indent_guard = 2
+let g:haskell_indent_case_alternative = 1
+let g:cabal_indent_section = 2
+
+" Stylishask
+let g:stylishask_on_save = 1
+
+" Hsimport
+augroup hsimportMaps
+    au!
+
+    au FileType haskell nnoremap <silent> <leader>i :silent update <bar> HsimportModule<cr>
+    au FileType haskell nnoremap <silent> <leader>I :silent update <bar> HsimportSymbol<cr>
+
+augroup END
+
