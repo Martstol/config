@@ -3,6 +3,7 @@ apt-get -y install git \
     build-essential \
     libncurses-dev \
     konsole \
+    zsh \
     fonts-firacode \
     neovim \
     tmux \
@@ -10,3 +11,6 @@ apt-get -y install git \
     gnome-shell-extension-weather
 
 update-alternatives --config x-terminal-emulator
+chsh -s $(which zsh)
+sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
