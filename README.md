@@ -1,8 +1,9 @@
 # config
 
-## Neovim
+Run `$ sudo ./dependencies.sh` to install packages
+and `./install.sh` to config local environment
 
-Requires [pathogen](https://github.com/tpope/vim-pathogen)
+## Neovim
 
 ## Tmux
 
