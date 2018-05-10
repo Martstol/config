@@ -207,3 +207,6 @@ augroup hsimportMaps
 
 augroup END
 
+" Neomake
+call neomake#configure#automake('w')
+
