@@ -6,7 +6,10 @@ apt-get -y install git \
     zsh \
     fonts-firacode \
     neovim \
-    tmux \
+    tmux
+
+apt-get -y install gnome-tweak-tool \
     gnome-shell-extensions \
-    gnome-shell-extension-weather
+    gnome-shell-extension-weather \
+    gnome-shell-extension-dash-to-panel
 

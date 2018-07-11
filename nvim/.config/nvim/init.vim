@@ -149,6 +149,7 @@ endtry
 
 " Nerdtree
 map <silent> <C-n> :NERDTreeToggle<CR>
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
 " Always show the status line
 set laststatus=2
